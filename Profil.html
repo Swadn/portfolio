@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Profil.css">
+    <title>My Portofolio</title>
+</head>
+<body>
+    <header class="header">
+        <a herf="#home" class="mylogo">My <span> Portofolio</span></a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="about-me">ABOUT ME</a>
+            <a href="skill">SKILL</a>
+            <a href="contact">CONTACT</a>
+
+            <div class="menuToogle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="content">
+            <h3>HI Everyone!!</h3>
+            <h1>i'm <span>Muhammad Siswandi</span></h1>
+            <h3>Frontend Developer</h3><br>
+            <p>Newbie Frontend Developer With Minim Experience HEHEHE</p><br>
+            <p>I'am Practicing to create a website and improve my Frontend Skills.</p>
+        </div>
+        <div class="image-container">
+            <img src="Profil.jpg" alt="Saya">
+        </div>
+    </section>
+
+
+    <script>
+
+        const nav = document.querySelector('.navbar');
+        const menu = document.querySelector('menuToogle');
+
+        menu.addEventListener('click', function () {
+            nav.classList.toggle('slide')
+        })
+
+
+    </script>
+
+
+</body>
+</html>
